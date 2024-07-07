@@ -1,7 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "dark_background.pdf",
+      "filename" : "5416466.jpg",
+      "idiom" : "universal"
+    },
+    {
+      "filename" : "5440073.pdf",
       "idiom" : "universal"
     },
     {
@@ -21,7 +25,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "dark_background 1.pdf",
+      "filename" : "5440073 1.pdf",
       "idiom" : "universal"
     }
   ],

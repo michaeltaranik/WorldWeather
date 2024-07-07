@@ -13,6 +13,8 @@ struct WeatherModel {
     let name: String
     let conditionID: Int
     let temperature: Int
+    let description: String
+    let country: String
     
     var temperatureString: String { String(temperature) }
     

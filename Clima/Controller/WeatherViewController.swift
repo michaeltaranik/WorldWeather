@@ -11,6 +11,7 @@ import CoreLocation
 
 class WeatherViewController: UIViewController {
     
+    @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
@@ -40,7 +41,8 @@ extension WeatherViewController: WeatherManagerDelegate {
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
         DispatchQueue.main.async {
             self.conditionImageView.image = UIImage(systemName: "\(weather.condition)")
-            self.cityLabel.text = weather.name
+            self.descriptionLabel.text = weather.description
+            self.cityLabel.text = weather.name + ", " + weather.country
             self.temperatureLabel.text = weather.temperatureString
         }
     }
